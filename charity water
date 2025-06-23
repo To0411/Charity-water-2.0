@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>The Water Crisis: Solvable Together | Non-Profit Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="logo">
+        <img src="https://www.charitywater.org/_nuxt/img/charity-water-logo.1b1c0b6.svg" alt="Charity: Water Logo" />
+      </div>
+      <h1 class="headline">
+        Image, the water crisis no longer a humanitarian crisis but a solvable one.
+      </h1>
+      <p class="subline">
+        Access to clean water can transform a life where water is not a commodity. Join us in turning knowledge into action to create a healthier and more equitable world.
+      </p>
+      <a href="#join" class="cta-btn">Join Us</a>
+    </div>
+  </section>
+
+  <nav>
+    <ul>
+      <li><a href="#goals" class="nav-link" data-target="goals">Our Goals</a></li>
+      <li><a href="#join" class="nav-link" data-target="join">Join Us</a></li>
+      <li><a href="#youth" class="nav-link" data-target="youth">Youth Power</a></li>
+      <li><a href="#take-action" class="nav-link" data-target="take-action">Take Action</a></li>
+      <li><a href="#get-involved" class="nav-link" data-target="get-involved">Get Involved</a></li>
+      <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="goals" class="tab-section" style="display:none;">
+    <h2>Our Goals & Aspirations</h2>
+    <ul class="goals-list">
+      <li>Provide clean and safe drinking water to every community in need.</li>
+      <li>Promote sustainable water management and education.</li>
+      <li>Empower local communities through knowledge and resources.</li>
+      <li>Engage the next generation in global water solutions.</li>
+      <li>Reduce waterborne diseases and improve public health.</li>
+    </ul>
+  </section>
+  <section id="join" class="tab-section" style="display:none;">
+    <h2>Join the Movement</h2>
+    <p>Discover ways to get involved, from volunteering and fundraising to sharing our mission. Your participation can save lives and build a better future.</p>
+  </section>
+  <section id="youth" class="tab-section" style="display:none;">
+    <h2>Youth Power</h2>
+    <p>The younger generation is key to ending the water crisis. Through activism, innovation, and awareness, youth are driving real change. Join, learn, and lead!</p>
+  </section>
+  <section id="take-action" class="tab-section" style="display:none;">
+    <h2>Take Action</h2>
+    <p>Discover ways you can make an immediate impact—donate, advocate, or join a campaign today!</p>
+  </section>
+  <section id="get-involved" class="tab-section" style="display:none;">
+    <h2>Get Involved</h2>
+    <p>Volunteer, start a fundraiser, or partner with us to bring clean water to more communities.</p>
+  </section>
+  <section id="contact" class="tab-section" style="display:none;">
+    <h2>Contact</h2>
+    <p>Have questions or want to connect? Reach out to us using our contact form or email.</p>
+  </section>
+
+  <div class="trees-background" aria-hidden="true">
+    <svg viewBox="0 0 1920 340" width="100%" height="100%" preserveAspectRatio="none">
+      <!-- Example tree shapes (you can customize or add more for realism) -->
+      <!-- Tree 1 -->
+      <g>
+        <rect x="120" y="225" width="18" height="65" fill="#836953"/>
+        <ellipse cx="129" cy="220" rx="52" ry="58" fill="#2e7d32"/>
+        <ellipse cx="129" cy="200" rx="38" ry="38" fill="#388e3c" opacity="0.9"/>
+      </g>
+      <!-- Tree 2 -->
+      <g>
+        <rect x="320" y="250" width="12" height="40" fill="#6d4c23"/>
+        <ellipse cx="326" cy="245" rx="28" ry="33" fill="#43a047"/>
+        <ellipse cx="326" cy="230" rx="18" ry="20" fill="#4caf50" opacity="0.8"/>
+      </g>
+      <!-- Tree 3 -->
+      <g>
+        <rect x="700" y="210" width="22" height="80" fill="#5d4024"/>
+        <ellipse cx="711" cy="210" rx="60" ry="68" fill="#388e3c"/>
+        <ellipse cx="711" cy="180" rx="40" ry="40" fill="#558b2f" opacity="0.8"/>
+      </g>
+      <!-- Tree 4 (right side) -->
+      <g>
+        <rect x="1600" y="230" width="20" height="70" fill="#7a5536"/>
+        <ellipse cx="1610" cy="230" rx="50" ry="60" fill="#388e3c"/>
+        <ellipse cx="1610" cy="205" rx="38" ry="38" fill="#43a047" opacity="0.9"/>
+      </g>
+      <!-- Bushes and ground -->
+      <ellipse cx="960" cy="330" rx="950" ry="38" fill="#b2ddb7" opacity="0.6"/>
+      <ellipse cx="350" cy="320" rx="120" ry="24" fill="#a5d6a7" opacity="0.8"/>
+      <ellipse cx="1590" cy="320" rx="120" ry="28" fill="#a5d6a7" opacity="0.7"/>
+    </svg>
+  </div>
+
+  <div id="light-burst"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+@import url('https://fonts.googleapis.com/css?family=Ryman+Eco:400,700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Ryman Eco', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e3fcec 0%, #eaf6fb 100%);
+  color: #253c29;
+  min-height: 100vh;
+  letter-spacing: 0.01em;
+}
+
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(34, 139, 87, 0.7); /* eco-friendly deep green overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 750px;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  max-height: 90px;
+  width: auto;
+  filter: drop-shadow(0px 2px 8px rgba(34,139,87,0.15));
+}
+
+.headline {
+  font-size: 2.8rem;
+  font-family: 'Ryman Eco', serif;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.15;
+  color: #f6ffde;
+  text-shadow: 0 2px 8px rgba(51, 83, 73, 0.18);
+}
+
+.subline {
+  font-size: 1.3rem;
+  font-family: 'Ryman Eco', serif;
+  margin-bottom: 2.2rem;
+  color: #e3ffe1;
+  line-height: 1.4;
+  text-shadow: 0 1px 6px rgba(51, 83, 73, 0.12);
+}
+
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #63c8a0 0%, #45aee0 100%);
+  color: #fff;
+  padding: 1em 2.1em;
+  border: none;
+  border-radius: 32px;
+  font-family: 'Ryman Eco', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(32, 78, 62, 0.16);
+  cursor: pointer;
+  transition: background 0.18s, transform 0.18s;
+  letter-spacing: 0.03em;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(90deg, #388e3c 0%, #00897b 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .headline { font-size: 1.5rem; }
+  .subline { font-size: 1.05rem; }
+  .hero-content { padding: 30px 10px; }
+  .logo img { max-height: 60px; }
+}
+// Water Splash Navigation + Light Burst for Goals Section
+
+document.addEventListener('DOMContentLoaded', function () {
+  const links = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('.tab-section');
+  const splash = document.createElement('div');
+  splash.id = 'water-splash';
+  document.body.appendChild(splash);
+
+  // Light burst for Goals section
+  const lightBurst = document.createElement('div');
+  lightBurst.id = 'light-burst';
+  document.body.appendChild(lightBurst);
+
+  // Add splash and light burst styles dynamically if not in CSS
+  const extraStyle = document.createElement('style');
+  extraStyle.textContent = `
+    #water-splash {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      width: 0;
+      height: 0;
+      background: radial-gradient(circle, #4FC3F7 60%, #0288D1 100%);
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: 0.7;
+      z-index: 2000;
+      transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+    }
+    #water-splash.splash-active {
+      width: 250vw;
+      height: 250vw;
+      left: -75vw;
+      top: -75vw;
+      opacity: 0.9;
+      transition: width 0.5s cubic-bezier(.79,.14,.15,.86), height 0.5s cubic-bezier(.79,.14,.15,.86), opacity 0.4s;
+    }
+    #light-burst {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: radial-gradient(circle, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.0) 65%);
+      pointer-events: none;
+      border-radius: 50%;
+      opacity: 1;
+      transform: translate(-50%, -50%);
+      z-index: 3000;
+      transition:
+        width 0.5s cubic-bezier(.79,.14,.15,.86),
+        height 0.5s cubic-bezier(.79,.14,.15,.86),
+        opacity 0.4s;
+    }
+    #light-burst.active {
+      width: 270vw;
+      height: 270vw;
+      opacity: 0;
+      transition:
+        width 0.5s cubic-bezier(.79,.14,.15,.86),
+        height 0.5s cubic-bezier(.79,.14,.15,.86),
+        opacity 0.7s 0.05s;
+    }
+  `;
+  document.head.appendChild(extraStyle);
+
+  // Hide all sections except first
+  function showSection(targetId) {
+    sections.forEach(sec => {
+      if (sec.id === targetId) {
+        sec.style.display = 'block';
+      } else {
+        sec.style.display = 'none';
+        sec.classList.remove('showing');
+      }
+    });
+  }
+  showSection(sections[0].id);
+
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = link.getAttribute('data-target');
+
+      if (targetId === 'goals') {
+        // Light burst effect for goals
+        lightBurst.classList.add('active');
+        setTimeout(() => {
+          showSection(targetId);
+          // Animate goals list
+          const goalsSection = document.getElementById('goals');
+          goalsSection.classList.add('showing');
+          lightBurst.classList.remove('active');
+        }, 450); // duration matches CSS transition
+      } else {
+        // Water splash effect for other sections
+        splash.classList.add('splash-active');
+        setTimeout(() => {
+          showSection(targetId);
+          splash.classList.remove('splash-active');
+        }, 500);
+      }
+    });
+  });
+
+  // If landing on page with #goals in URL, trigger animation
+  if (window.location.hash === '#goals') {
+    setTimeout(() => {
+      showSection('goals');
+      const goalsSection = document.getElementById('goals');
+      goalsSection.classList.add('showing');
+    }, 300);
+  }
+});
